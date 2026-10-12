@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>የ ፵ (40) ቀን መታሰቢያ - መምሬ ጥላሁን መሸሻ</title>
+  
+  <meta property="og:title" content="የ ፵ (40) ቀን መታሰቢያ መጥሪያ - መምሬ ጥላሁን መሸሻ">
+  <meta property="og:description" content="«እግዚአብሔር የወደደውን ሁሉ አደረገ» መዝ. 135:6 - ጥቅምት 8 ቀን 2019 ዓ.ም">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;600;700;900&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #050505;
+      color: #f3f4f6;
+      font-family: 'Noto Serif Ethiopic', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1.5rem 1rem;
+      background-image: 
+        radial-gradient(circle at 50% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 50% 85%, rgba(180, 130, 40, 0.05) 0%, transparent 70%);
+    }
+
+    .main-container {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #121212 0%, #0a0a0a 100%);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 1.25rem;
+      padding: 2.25rem 1.5rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.1);
+      position: relative;
+      text-align: center;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      border-radius: 1rem;
+      pointer-events: none;
+    }
+
+    .gold-text {
+      color: #d4af37;
+    }
+
+    .cross-icon {
+      font-size: 1.75rem;
+      color: #d4af37;
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.4));
+    }
+
+    .scripture-quote {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .scripture-ref {
+      font-size: 0.85rem;
+      color: #d4af37;
+      margin-top: 0.25rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Invitee Section */
+    .invitee-wrapper {
+      margin: 1.5rem 0 1rem 0;
+      padding: 0.75rem 1rem;
+      background: rgba(212, 175, 55, 0.06);
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 6px;
+    }
+
+    .invitee-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .invitee-sub {
+      font-size: 0.9rem;
+      color: #d4af37;
+      margin-top: 2px;
+    }
+
+    /* Candle Animation */
+    .candle-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.25rem 0;
+    }
+
+    .candle-holder {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .flame-glow {
+      position: absolute;
+      top: -12px;
+      width: 32px;
+      height: 32px;
+      background: radial-gradient(circle, rgba(255, 170, 0, 0.6) 0%, rgba(255, 100, 0, 0) 70%);
+      border-radius: 50%;
+      filter: blur(4px);
+      animation: glowPulse 2s infinite alternate ease-in-out;
+    }
+
+    .flame {
+      width: 14px;
+      height: 26px;
+      background: linear-gradient(to bottom, #fff 0%, #ffea79 25%, #ff9800 65%, #d84315 100%);
+      border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%;
+      box-shadow: 0 0 12px #ff9800, 0 0 20px #ff5722;
+      animation: flameFlicker 1.8s infinite ease-in-out alternate;
+    }
+
+    .wick {
+      width: 2px;
+      height: 7px;
+      background-color: #222;
+    }
+
+    .candle-body {
+      width: 22px;
+      height: 48px;
+      background: linear-gradient(to right, #e2dcd2, #ffffff, #cfc6b8);
+      border-radius: 3px 3px 2px 2px;
+      box-shadow: inset 0 2px 3px rgba(0,0,0,0.2), 0 3px 8px rgba(0,0,0,0.6);
+    }
+
+    @keyframes flameFlicker {
+      0% { transform: scale(1) rotate(-1deg); }
+      25% { transform: scale(1.04, 0.96) rotate(1.5deg); }
+      50% { transform: scale(0.96, 1.05) rotate(-1deg); }
+      75% { transform: scale(1.02, 0.98) rotate(2deg); }
+      100% { transform: scale(0.98, 1.02) rotate(-0.5deg); }
+    }
+
+    @keyframes glowPulse {
+      0% { opacity: 0.6; transform: scale(0.95); }
+      100% { opacity: 0.95; transform: scale(1.15); }
+    }
+
+    .memorial-tag {
+      font-size: 0.85rem;
+      letter-spacing: 1.5px;
+      color: #d4af37;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* Photo Frame Carousel */
+    .photo-frame-wrapper {
+      position: relative;
+      width: 190px;
+      height: 245px;
+      margin: 1.25rem auto;
+      border-radius: 50% / 40%;
+      padding: 6px;
+      background: linear-gradient(145deg, #d4af37 0%, #685014 45%, #f9e295 75%, #463408 100%);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.9), 0 0 18px rgba(212, 175, 55, 0.25);
+    }
+
+    .photo-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50% / 40%;
+      overflow: hidden;
+      background-color: #111;
+      position: relative;
+      border: 2px solid #0a0a0a;
+    }
+
+    .photo-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+    }
+
+    .photo-img.active {
+      opacity: 1;
+    }
+
+    .photo-fallback {
+      display: none;
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #181818;
+      color: #d4af37;
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+
+    /* Invitation Texts */
+    .deceased-title {
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-top: 0.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    .deceased-sub {
+      font-size: 1.05rem;
+      color: #d4af37;
+      margin-top: 0.25rem;
+      font-weight: 600;
+    }
+
+    .divider-line {
+      width: 80px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d4af37, transparent);
+      margin: 1.25rem auto;
+    }
+
+    .invitation-body {
+      font-size: 0.96rem;
+      line-height: 1.85;
+      color: #e5e7eb;
+      text-align: justify;
+      text-justify: inter-word;
+      padding: 0 0.25rem;
+    }
+
+    /* Program Highlights */
+    .program-box {
+      margin-top: 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .program-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .program-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .program-icon {
+      color: #d4af37;
+      margin-right: 0.65rem;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .program-label {
+      color: #9ca3af;
+      font-size: 0.8rem;
+    }
+
+    .program-val {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* Countdown Grid */
+    .countdown-section {
+      margin-top: 1.75rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+    }
+
+    .countdown-title {
+      font-size: 0.82rem;
+      letter-spacing: 1.5px;
+      color: #d4af37;
+      text-transform: uppercase;
+      margin-bottom: 0.85rem;
+    }
+
+    .timer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    .timer-item {
+      background: #141414;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 8px;
+      padding: 0.6rem 0.2rem;
+    }
+
+    .timer-num {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: 'Cinzel', serif;
+    }
+
+    .timer-label {
+      font-size: 0.7rem;
+      color: #9ca3af;
+      margin-top: 2px;
+    }
+
+    /* Admin Generator (Hidden for Guests) */
+    #adminPanel {
+      display: none;
+      margin-top: 2rem;
+      background: #121212;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: left;
+    }
+
+    .admin-title {
+      font-size: 0.95rem;
+      color: #d4af37;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .admin-desc {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .admin-input {
+      width: 100%;
+      background: #090909;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: #fff;
+      padding: 0.65rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      outline: none;
+      font-family: inherit;
+      margin-bottom: 0.65rem;
+    }
+
+    .admin-input:focus {
+      border-color: #d4af37;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      font-size: 0.82rem;
+      color: #d1d5db;
+      margin-bottom: 0.85rem;
+      cursor: pointer;
+    }
+
+    .checkbox-row input {
+      margin-right: 0.5rem;
+      accent-color: #d4af37;
+    }
+
+    .btn-gold {
+      width: 100%;
+      background: linear-gradient(135deg, #d4af37 0%, #aa8018 100%);
+      color: #000;
+      font-weight: 700;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+      font-family: inherit;
+    }
+
+    .btn-tg {
+      width: 100%;
+      background: #229ED9;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .amen-trigger {
+      font-size: 0.95rem;
+      color: #9ca3af;
+      margin-top: 1.5rem;
+      user-select: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="card">
+      
+      <!-- Scripture Header -->
+      <div class="cross-icon">✞</div>
+      <div class="scripture-quote">«እግዚአብሔር የወደደውን ሁሉ አደረገ»</div>
+      <div class="scripture-ref">መዝ. 135:6</div>
+
+      <!-- Dynamic Invitee Section -->
+      <div class="invitee-wrapper">
+        <div class="invitee-name" id="inviteeDisplayName">የተከበሩ ቤተሰብ</div>
+        <div class="invitee-sub" id="inviteeSubText">እና ቤተሰብዎ</div>
+      </div>
+
+      <!-- Animated Candle -->
+      <div class="candle-container">
+        <div class="candle-holder">
+          <div class="flame-glow"></div>
+          <div class="flame"></div>
+          <div class="wick"></div>
+          <div class="candle-body"></div>
+        </div>
+        <div class="memorial-tag">የ ፵ (40) ቀን መታሰቢያ</div>
+      </div>
+
+      <!-- 2-Photo Rotating Frame -->
+      <div class="photo-frame-wrapper">
+        <div class="photo-inner">
+          <img id="img1" class="photo-img active" src="photo%201.jpg" alt="መምሬ ጥላሁን መሸሻ">
+          <img id="img2" class="photo-img" src="photo%202.jpg" alt="መምሬ ጥላሁን መሸሻ">
+          <div id="photoFallback" class="photo-fallback">
+            <span style="font-size: 1.8rem; margin-bottom: 4px;">✞</span>
+            <span>መምሬ ጥላሁን መሸሻ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Memorial Title -->
+      <div class="deceased-title">መምሬ ጥላሁን መሸሻ</div>
+      <div class="deceased-sub">የ ፵ (40) ቀን መታሰቢያ መጥሪያ</div>
+
+      <div class="divider-line"></div>
+
+      <!-- Invitation Body -->
+      <p class="invitation-body">
+        የማክበር ሰላምታችንን እያቀረብን የመምሬ ጥላሁን መሸሻ የ ፵ (40) ቀን መታሰቢያ እሁድ ጥቅምት 8 ቀን 2019 ዓ.ም ስለሆነ በዚሁ ዕለት ከንጋቱ 12:30 ሰዓት በብሔረ ጽጌ ማርያም ሰንበቴ በሚደረገው ሥርዓተ ጸሎት እና ሐውልት ምርቃት ላይ እንዲገኙልንና ከዛም መልስ በመኖሪያ ቤታችን (ሳሪስ አዲስ ሰፈር) የተዘጋጀውን ጸበል ጻድቅ እንዲቀምሱልን በማክበር ጠርተኖታል።
+      </p>
+
+      <!-- Key Program Details -->
+      <div class="program-box">
+        <div class="program-item">
+          <span class="program-icon">📅</span>
+          <div>
+            <div class="program-label">ቀን እና ሰዓት</div>
+            <div class="program-val">እሁድ ጥቅምት 8 ቀን 2019 ዓ.ም (ከንጋቱ 12:30 ሰዓት)</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <span class="program-icon">⛪</span>
+          <div>
+            <div class="program-label">የጸሎትና የምርቃት ቦታ</div>
+            <div class="program-val">ብሔረ ጽጌ ማርያም ሰንበቴ</div>
+          </div>
+        </div>
+
+        <div class="program-item">
+          <span class="program-icon">📍</span>
+          <div>
+            <div class="program-label">የጸበል ጻድቅ መስተንግዶ ቦታ</div>
+            <div class="program-val">ሳሪስ አዲስ ሰፈር (በመኖሪያ ቤታችን)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Countdown Section -->
+      <div class="countdown-section">
+        <div class="countdown-title">ለመታሰቢያ ቀኑ የቀረው ጊዜ</div>
+        <div class="timer-grid">
+          <div class="timer-item">
+            <div class="timer-num" id="cdDays">00</div>
+            <div class="timer-label">ቀን</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-num" id="cdHours">00</div>
+            <div class="timer-label">ሰዓት</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-num" id="cdMinutes">00</div>
+            <div class="timer-label">ደቂቃ</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-num" id="cdSeconds">00</div>
+            <div class="timer-label">ሰከንድ</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden Admin Tool Section (For Owner Only) -->
+      <div id="adminPanel">
+        <div class="admin-title">⚙️ የተጋባዥ ሊንክ ማዘጋጃ (ለእርስዎ ብቻ የሚታይ)</div>
+        <div class="admin-desc">ለሚልኩላቸው ሰው ስም እዚህ ጋር ጽፈው የቴሌግራም መጥሪያ ያዘጋጁ፦</div>
+        
+        <input type="text" id="adminGuestInput" class="admin-input" placeholder="ምሳሌ፦ አቶ ከበደ / ወ/ሮ አልማዝ">
+        
+        <label class="checkbox-row">
+          <input type="checkbox" id="adminSpouseCheck">
+          <span>«ከነባለቤትዎ» የሚለው ይጨመርበት</span>
+        </label>
+
+        <button class="btn-gold" id="btnCopyInvite">📋 የተዘጋጀውን ሊንክ ቅዳ (Copy)</button>
+        <button class="btn-tg" id="btnSendTg">✈️ በቴሌግራም በቀጥታ ላክ</button>
+      </div>
+
+      <!-- Secret tap to reveal admin panel -->
+      <div class="amen-trigger" id="amenTrigger" title="Double click to open admin generator">አሜን።</div>
+
+    </div>
+  </div>
+
+  <script>
+    // 1. Personalized URL Handling
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestName = urlParams.get('to');
+    const hasSpouse = urlParams.get('spouse') === '1';
+    const isAdmin = urlParams.get('admin') === '1';
+
+    const displayNameEl = document.getElementById('inviteeDisplayName');
+    const subTextEl = document.getElementById('inviteeSubText');
+
+    if (guestName && guestName.trim() !== '') {
+      displayNameEl.textContent = 'የተከበሩ ' + decodeURIComponent(guestName.trim());
+      subTextEl.textContent = hasSpouse ? 'ከነባለቤትዎ' : 'እና ቤተሰብዎ';
+    } else {
+      displayNameEl.textContent = 'የተከበሩ ቤተሰብ';
+      subTextEl.textContent = 'እና ቤተሰብዎ';
+    }
+
+    // 2. Photo Carousel (Swapping every 2 seconds)
+    const img1 = document.getElementById('img1');
+    const img2 = document.getElementById('img2');
+    const fallback = document.getElementById('photoFallback');
+    let showingFirst = true;
+
+    function verifyImages() {
+      img1.addEventListener('error', function() {
+        this.style.display = 'none';
+        if (img2.style.display === 'none') fallback.style.display = 'flex';
+      });
+      img2.addEventListener('error', function() {
+        this.style.display = 'none';
+        if (img1.style.display === 'none') fallback.style.display = 'flex';
+      });
+    }
+    verifyImages();
+
+    setInterval(function() {
+      if (img1.style.display !== 'none' && img2.style.display !== 'none') {
+        if (showingFirst) {
+          img1.classList.remove('active');
+          img2.classList.add('active');
+        } else {
+          img2.classList.remove('active');
+          img1.classList.add('active');
+        }
+        showingFirst = !showingFirst;
+      }
+    }, 2000);
+
+    // 3. Countdown Timer (Target: October 18, 2026, 06:30 AM EAT)
+    const targetDate = new Date('2026-10-18T06:30:00+03:00').getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        document.getElementById('cdDays').textContent = '00';
+        document.getElementById('cdHours').textContent = '00';
+        document.getElementById('cdMinutes').textContent = '00';
+        document.getElementById('cdSeconds').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+      document.getElementById('cdHours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cdMinutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('cdSeconds').textContent = String(seconds).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // 4. Admin Generator Control
+    const adminPanel = document.getElementById('adminPanel');
+    const amenTrigger = document.getElementById('amenTrigger');
+
+    if (isAdmin) {
+      adminPanel.style.display = 'block';
+    }
+
+    amenTrigger.addEventListener('dblclick', function() {
+      adminPanel.style.display = adminPanel.style.display === 'block' ? 'none' : 'block';
+    });
+
+    function generateCustomUrl() {
+      const name = document.getElementById('adminGuestInput').value.trim();
+      const spouse = document.getElementById('adminSpouseCheck').checked;
+      const baseUrl = window.location.origin + window.location.pathname;
+
+      if (!name) return baseUrl;
+      let url = baseUrl + '?to=' + encodeURIComponent(name);
+      if (spouse) url += '&spouse=1';
+      return url;
+    }
+
+    document.getElementById('btnCopyInvite').addEventListener('click', function() {
+      const link = generateCustomUrl();
+      const guest = document.getElementById('adminGuestInput').value.trim();
+      const msg = (guest ? 'ለተከበሩ ' + guest + ' የተላከ የ ፵ ቀን መታሰቢያ መጥሪያ፦\n' : 'የ ፵ ቀን መታሰቢያ መጥሪያ፦\n') + link;
+      
+      navigator.clipboard.writeText(msg).then(function() {
+        alert('የተዘጋጀው ሊንክ ተገልብጧል (Copied)! ቴሌግራም ላይ መላክ ይችላሉ።');
+      }).catch(function() {
+        prompt('ሊንኩን ከዚህ ኮፒ ያድርጉ:', link);
+      });
+    });
+
+    document.getElementById('btnSendTg').addEventListener('click', function() {
+      const link = generateCustomUrl();
+      const guest = document.getElementById('adminGuestInput').value.trim();
+      const msg = (guest ? 'ለተከበሩ ' + guest + ' የተላከ የ ፵ ቀን መታሰቢያ መጥሪያ፦\n' : 'የመምሬ ጥላሁን መሸሻ የ ፵ ቀን መታሰቢያ መጥሪያ፦\n') + link;
+      window.open('https://t.me/share/url?url=' + encodeURIComponent(link) + '&text=' + encodeURIComponent(msg), '_blank');
+    });
+  </script>
+</body>
+</html>
